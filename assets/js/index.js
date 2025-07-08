@@ -1,4 +1,4 @@
-const SUBJECT = 'johncoleman83';
+const SUBJECT = 'microsoft';
 const metaData = {};
 
 function makeRepoLink (html_url, full_name) {
@@ -85,7 +85,7 @@ function loopReposTask (data) {
 }
 
 var getData = (function ($) {
-  let ReposUrl = `https://api.github.com/users/${SUBJECT}/repos`
+  let ReposUrl = `https://api.github.com/orgs/${SUBJECT}/repos`
   $.ajax({
     url: ReposUrl,
     type: 'GET',
