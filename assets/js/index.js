@@ -90,7 +90,7 @@ var getData = (function ($) {
     url: ReposUrl,
     type: 'GET',
     success: function (data) {
-      loopReposTask(data);
+      loopReposTask(data.items);
     },
     error: function (data) {
       console.info(data);
