@@ -85,7 +85,7 @@ function loopReposTask (data) {
 }
 
 var getData = (function ($) {
-  let ReposUrl = `https://api.github.com/orgs/${SUBJECT}/repos`
+  let ReposUrl = `https://api.github.com/search/repositories?q=org:${SUBJECT}+topic:sdk`
   $.ajax({
     url: ReposUrl,
     type: 'GET',
